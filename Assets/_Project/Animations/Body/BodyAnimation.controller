@@ -29,7 +29,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WalkU
+  m_Name: WalkUp
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -247,7 +247,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WalkR
+  m_Name: WalkRight
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -407,7 +407,7 @@ AnimatorStateMachine:
     m_Position: {x: 540, y: 420, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1743239381634176384}
-    m_Position: {x: 520, y: 500, z: 0}
+    m_Position: {x: 140, y: 520, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -7128907022724326835}
@@ -483,7 +483,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WalkL
+  m_Name: WalkLeft
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

@@ -1,37 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class CharacterVisualController : MonoBehaviour
 {
     #region References
-    public Animator hatRenderer;
-    public Animator hairRenderer;
-    public Animator clothRenderer;
+    public Animator hatAnimator;
+    public Animator hairAnimator;
+    public Animator clothAnimator;
+    public Animator bodyAnimator;
     #endregion References
 
-    private VisualInfo currentVisual;
-    [SerializeField] private string currentAnimation;
-    private void Start()
+    private VisualInfo _currentVisual;
+    [SerializeField] private string currentAnimation = "StandDown";
+
+    [Button]
+    private void PlayAnimation(string animName)
     {
-
-    }
-
-    private void Update()
-    {
-
+        currentAnimation = animName;
+        bodyAnimator.Play(animName);
+        hatAnimator.Play(animName);
+        hairAnimator.Play(animName);
+        clothAnimator.Play(animName);
     }
 
     private void UpdateVisual()
     {
-        hatRenderer.runtimeAnimatorController = currentVisual.hat.controller;
-        hairRenderer.runtimeAnimatorController = currentVisual.hair.controller;
-        clothRenderer.runtimeAnimatorController = currentVisual.cloth.controller;
+        hatAnimator.runtimeAnimatorController = _currentVisual.hat.controller;
+        hairAnimator.runtimeAnimatorController = _currentVisual.hair.controller;
+        clothAnimator.runtimeAnimatorController = _currentVisual.cloth.controller;
     }
 
     public void ChangeCurrentVisual(VisualInfo visualInfo)
     {
-        currentVisual = visualInfo;
+        _currentVisual = visualInfo;
         UpdateVisual();
     }
 }

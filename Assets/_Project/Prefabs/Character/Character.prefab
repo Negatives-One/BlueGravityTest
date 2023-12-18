@@ -227,7 +227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &32464237132690410
 Transform:
   m_ObjectHideFlags: 0
@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 32464238124609245}
   - component: {fileID: 1839385510}
   - component: {fileID: 1839385511}
+  - component: {fileID: 1839385512}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -436,7 +437,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f3bfcfd9d4111b448cb11eba0cac766, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hatRenderer: {fileID: 583161493}
-  hairRenderer: {fileID: 32464236574729595}
-  clothRenderer: {fileID: 3361837003457130477}
+  hatAnimator: {fileID: 583161493}
+  hairAnimator: {fileID: 32464236574729595}
+  clothAnimator: {fileID: 3361837003457130477}
+  bodyAnimator: {fileID: 1839385510}
   currentAnimation: 
+--- !u!210 &1839385512
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32464238124609242}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
