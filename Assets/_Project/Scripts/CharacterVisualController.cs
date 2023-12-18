@@ -1,9 +1,12 @@
+using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class CharacterVisualController : MonoBehaviour
 {
     #region References
+
+    [SerializeField] private CharacterController characterController;
     public Animator hatAnimator;
     public Animator hairAnimator;
     public Animator clothAnimator;
@@ -12,6 +15,18 @@ public class CharacterVisualController : MonoBehaviour
 
     private VisualInfo _currentVisual;
     [SerializeField] private string currentAnimation = "StandDown";
+    private static readonly int IsWalking = Animator.StringToHash("isWalking");
+    private static readonly int IsSide = Animator.StringToHash("isSide");
+    private static readonly int IsFront = Animator.StringToHash("isFront");
+    private static readonly int IsBack = Animator.StringToHash("isBack");
+
+    private void Update()
+    {
+        bodyAnimator.SetBool(IsWalking, characterController.isWalking);
+        bodyAnimator.SetBool(IsSide, characterController.lastLookingDir == CharacterController.LookingDirection.Side);
+        bodyAnimator.SetBool(IsFront, characterController.lastLookingDir == CharacterController.LookingDirection.Front);
+        bodyAnimator.SetBool(IsBack, characterController.lastLookingDir == CharacterController.LookingDirection.Back);
+    }
 
     [Button]
     private void PlayAnimation(string animName)

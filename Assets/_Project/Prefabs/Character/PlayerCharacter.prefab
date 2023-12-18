@@ -7,6 +7,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1839385511, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: characterController
+      value: 
+      objectReference: {fileID: 1300034321}
+    - target: {fileID: 32464236413409630, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32464236812694495, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32464237132690411, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 32464238124609242, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
@@ -21,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 32464238124609244, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.67
+      value: -2.23
       objectReference: {fileID: 0}
     - target: {fileID: 32464238124609244, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_LocalPosition.z

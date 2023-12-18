@@ -13,8 +13,8 @@ public class CharacterController : MonoBehaviour
     }
 
     [SerializeField] private float speed = 5f;
-    [SerializeField] private LookingDirection lastLookingDir = LookingDirection.Front;
-    [SerializeField] private bool isWalking = false;
+    public LookingDirection lastLookingDir = LookingDirection.Front;
+    [HideInInspector] public bool isWalking = false;
 
     private void Update()
     {
@@ -24,8 +24,8 @@ public class CharacterController : MonoBehaviour
         Vector3 flipScale = transform.localScale;
         if (lastLookingDir == LookingDirection.Side)
         {
-            if (playerInputsReceiver.moveVector.x > 0) flipScale.x = 1;
-            else if (playerInputsReceiver.moveVector.x < 0) flipScale.x = -1;
+            if (playerInputsReceiver.moveVector.x > 0) flipScale.x = -1;
+            else if (playerInputsReceiver.moveVector.x < 0) flipScale.x = 1;
             transform.localScale = flipScale;
         }
     }
