@@ -10,7 +10,7 @@ public class CharacterVisualController : MonoBehaviour
     public Animator clothRenderer;
     #endregion References
 
-    private VisualInfoSO currentVisual;
+    private VisualInfo currentVisual;
     [SerializeField] private string currentAnimation;
     private void Start()
     {
@@ -29,7 +29,7 @@ public class CharacterVisualController : MonoBehaviour
         clothRenderer.runtimeAnimatorController = currentVisual.cloth.controller;
     }
 
-    public void ChangeCurrentVisual(VisualInfoSO visualInfo)
+    public void ChangeCurrentVisual(VisualInfo visualInfo)
     {
         currentVisual = visualInfo;
         UpdateVisual();

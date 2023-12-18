@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0b3970a443ed724088b876ac3e024ca, type: 3}
   m_Name: HairsSO
   m_EditorClassIdentifier: 
-  hairs: []
+  hairs:
+  - name: Type 2
+    controller: {fileID: 9100000, guid: 8f8a92ee4aa370b41a42852cc349b3fc, type: 2}

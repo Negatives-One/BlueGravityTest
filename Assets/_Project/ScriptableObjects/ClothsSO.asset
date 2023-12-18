@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09d0595d6492355428eecbeadecad213, type: 3}
   m_Name: ClothsSO
   m_EditorClassIdentifier: 
-  cloths: []
+  cloths:
+  - name: UnderPants 1
+    controller: {fileID: 9100000, guid: b9f3fe035a08de444829003096acb233, type: 2}
