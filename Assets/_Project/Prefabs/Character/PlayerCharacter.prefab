@@ -19,6 +19,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 32464236574729595, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 30adfe04b5986d64a98de7740fa592ca, type: 2}
     - target: {fileID: 32464236812694495, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -75,6 +79,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3361837003457130477, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 115d2a1f552fcdf49a3a8ace8fbb7fd0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182e79728e612c54492afae70888192a, type: 3}
 --- !u!1 &4589530392103358729 stripped
@@ -180,3 +188,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interact: 0
   moveVector: {x: 0, y: 0}
+--- !u!114 &5534074270070519878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4589530392103358729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e614b19affc3eff409fbc7b38266bd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onUpdateMoney:
+    m_PersistentCalls:
+      m_Calls: []

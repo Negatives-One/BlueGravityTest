@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CharacterVisualController : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class CharacterVisualController : MonoBehaviour
     public Animator bodyAnimator;
     #endregion References
 
-    [SerializeField] private VisualInfo _currentVisual;
+    [FormerlySerializedAs("_currentVisual")] [SerializeField] private CharacterVisualInfo currentCharacterVisual;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
     private static readonly int IsSide = Animator.StringToHash("isSide");
     private static readonly int IsFront = Animator.StringToHash("isFront");
@@ -52,14 +53,14 @@ public class CharacterVisualController : MonoBehaviour
 
     private void UpdateVisual()
     {
-        hatAnimator.runtimeAnimatorController = _currentVisual.hat.controller;
-        hairAnimator.runtimeAnimatorController = _currentVisual.hair.controller;
-        clothAnimator.runtimeAnimatorController = _currentVisual.cloth.controller;
+        hatAnimator.runtimeAnimatorController = currentCharacterVisual.hat.controller;
+        hairAnimator.runtimeAnimatorController = currentCharacterVisual.hair.controller;
+        clothAnimator.runtimeAnimatorController = currentCharacterVisual.cloth.controller;
     }
 
-    public void ChangeCurrentVisual(VisualInfo visualInfo)
+    public void ChangeCurrentVisual(CharacterVisualInfo characterVisualInfo)
     {
-        _currentVisual = visualInfo;
+        currentCharacterVisual = characterVisualInfo;
         UpdateVisual();
     }
 }

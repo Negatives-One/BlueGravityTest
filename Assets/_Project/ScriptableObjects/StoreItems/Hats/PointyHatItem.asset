@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1999093697a3dbd439ddab9748bcc6c4, type: 3}
+  m_Name: PointyHatItem
+  m_EditorClassIdentifier: 
+  icon: {fileID: -907807570, guid: 4ab65637fa76e4345b93b3ea8c65eda5, type: 3}
+  itemName: Pointy Hat
+  description: A hat from a fallen wizard
+  price: 100
+  canStack: 0
+  equipInfo: {fileID: 11400000, guid: 3568f9f32bebfbb468dd2d713ee72ce2, type: 2}

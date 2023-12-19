@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1999093697a3dbd439ddab9748bcc6c4, type: 3}
+  m_Name: Type 2
+  m_EditorClassIdentifier: 
+  icon: {fileID: 763158550, guid: b64965ac0717f6c4b9bbc37a14f77d86, type: 3}
+  itemName: Hair Type 2
+  description: A Nice Wig
+  price: 10
+  canStack: 0
+  equipInfo: {fileID: 11400000, guid: 891703bfc34b05743861f079d6d24e3c, type: 2}
