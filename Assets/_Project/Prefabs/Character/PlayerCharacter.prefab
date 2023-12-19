@@ -7,21 +7,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 583161493, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bda4e8a567375114ebb2d3a88ca4b3cb, type: 2}
     - target: {fileID: 1839385511, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: characterController
       value: 
       objectReference: {fileID: 1300034321}
     - target: {fileID: 32464236413409630, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 32464236812694495, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 32464237132690411, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 32464238124609242, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_Name
@@ -159,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 1300034320}
   playerInputsReceiver: {fileID: 1300034327}
-  speed: 2
+  speed: 1
   lastLookingDir: 2
   isWalking: 0
 --- !u!114 &1300034327

@@ -13,5 +13,11 @@ MonoBehaviour:
   m_Name: ClothsSO
   m_EditorClassIdentifier: 
   cloths:
-  - name: UnderPants 1
+  - name: Underpants 1
     controller: {fileID: 9100000, guid: b9f3fe035a08de444829003096acb233, type: 2}
+  - name: Underpants 2
+    controller: {fileID: 9100000, guid: 97323a8d1aa39664a8f0dca6b0e7237b, type: 2}
+  - name: Sun Armor
+    controller: {fileID: 9100000, guid: 28417edfefa6d9f4991db722e896d913, type: 2}
+  - name: Moon Armor
+    controller: {fileID: 9100000, guid: 115d2a1f552fcdf49a3a8ace8fbb7fd0, type: 2}

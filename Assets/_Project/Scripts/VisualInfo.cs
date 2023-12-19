@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 
+[Serializable]
 public class VisualInfo : MonoBehaviour
 {
     public enum BodyType {Type1, Type2}

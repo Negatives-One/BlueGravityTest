@@ -8643,6 +8643,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1253614158481412158, guid: ccaa0cb6138ddf94cafc175d985d05ab, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 115d2a1f552fcdf49a3a8ace8fbb7fd0, type: 2}
+    - target: {fileID: 4589530391182740536, guid: ccaa0cb6138ddf94cafc175d985d05ab, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4589530391757249192, guid: ccaa0cb6138ddf94cafc175d985d05ab, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 30adfe04b5986d64a98de7740fa592ca, type: 2}
     - target: {fileID: 4589530392103358729, guid: ccaa0cb6138ddf94cafc175d985d05ab, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter

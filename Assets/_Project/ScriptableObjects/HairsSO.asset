@@ -15,3 +15,5 @@ MonoBehaviour:
   hairs:
   - name: Type 2
     controller: {fileID: 9100000, guid: 8f8a92ee4aa370b41a42852cc349b3fc, type: 2}
+  - name: Type 1
+    controller: {fileID: 9100000, guid: 30adfe04b5986d64a98de7740fa592ca, type: 2}
