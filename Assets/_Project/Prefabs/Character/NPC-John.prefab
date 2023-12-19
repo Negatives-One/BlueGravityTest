@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 32464238124609242, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_Name
-      value: Character
+      value: NPC-John
       objectReference: {fileID: 0}
     - target: {fileID: 32464238124609244, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_RootOrder
@@ -57,3 +57,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182e79728e612c54492afae70888192a, type: 3}
+--- !u!1 &3534687157210127618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 32464238124609242, guid: 182e79728e612c54492afae70888192a, type: 3}
+  m_PrefabInstance: {fileID: 3566548747904562136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8671273180552526246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3534687157210127618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25441f0c208765d49a06dc4214845d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8671273180552526246}
+        m_TargetAssemblyTypeName: NPCSeller, Assembly-CSharp
+        m_MethodName: OpenStore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  myItems: {fileID: 11400000, guid: 4d002cff38f163d4c91e64dccda96e8f, type: 2}

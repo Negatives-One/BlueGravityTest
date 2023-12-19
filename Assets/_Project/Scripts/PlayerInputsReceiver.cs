@@ -13,6 +13,6 @@ public class PlayerInputsReceiver : MonoBehaviour
 
     public void OnInteract()
     {
-        
+        interact = true;
     }
 }

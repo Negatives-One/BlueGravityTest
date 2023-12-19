@@ -4,6 +4,7 @@ public class CharacterController : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb2D;
     [SerializeField] private PlayerInputsReceiver playerInputsReceiver;
+    [SerializeField] private InteractionChecker interactionChecker;
 
     public enum LookingDirection
     {
@@ -27,6 +28,12 @@ public class CharacterController : MonoBehaviour
             if (playerInputsReceiver.moveVector.x > 0) flipScale.x = -1;
             else if (playerInputsReceiver.moveVector.x < 0) flipScale.x = 1;
             transform.localScale = flipScale;
+        }
+
+        if (playerInputsReceiver.interact)
+        {
+            interactionChecker.nextToMe.OnInteract();
+            playerInputsReceiver.interact = false;
         }
     }
 
