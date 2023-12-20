@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d0595d6492355428eecbeadecad213, type: 3}
+  m_Name: PointyHat
+  m_EditorClassIdentifier: 
+  name: Pointy Hat
+  equipmentType: 0
+  controller: {fileID: 9100000, guid: bda4e8a567375114ebb2d3a88ca4b3cb, type: 2}
+  worldSprite: {fileID: -1801778065, guid: 4ab65637fa76e4345b93b3ea8c65eda5, type: 3}
