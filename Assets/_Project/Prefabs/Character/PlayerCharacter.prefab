@@ -61,7 +61,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4075a8172cea8be4a95c6b186ad339dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextToMe: {fileID: 0}
 --- !u!1001 &4594269334250733523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74,9 +73,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: bda4e8a567375114ebb2d3a88ca4b3cb, type: 2}
     - target: {fileID: 1839385511, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: hatSpriteRenderer
+      value: 
+      objectReference: {fileID: 4589530391182740542}
+    - target: {fileID: 1839385511, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: basicClothAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 97323a8d1aa39664a8f0dca6b0e7237b, type: 2}
+    - target: {fileID: 1839385511, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: hairSpriteRenderer
+      value: 
+      objectReference: {fileID: 4589530391268019202}
+    - target: {fileID: 1839385511, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: characterController
       value: 
       objectReference: {fileID: 1300034321}
+    - target: {fileID: 1839385511, guid: 182e79728e612c54492afae70888192a, type: 3}
+      propertyPath: clothSpriteRenderer
+      value: 
+      objectReference: {fileID: 4589530391935673987}
     - target: {fileID: 32464236413409630, guid: 182e79728e612c54492afae70888192a, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -147,6 +162,21 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 115d2a1f552fcdf49a3a8ace8fbb7fd0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182e79728e612c54492afae70888192a, type: 3}
+--- !u!212 &4589530391182740542 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 32464237132690413, guid: 182e79728e612c54492afae70888192a, type: 3}
+  m_PrefabInstance: {fileID: 4594269334250733523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4589530391268019202 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 32464236812694481, guid: 182e79728e612c54492afae70888192a, type: 3}
+  m_PrefabInstance: {fileID: 4594269334250733523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &4589530391935673987 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 32464236413409616, guid: 182e79728e612c54492afae70888192a, type: 3}
+  m_PrefabInstance: {fileID: 4594269334250733523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4589530392103358729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 32464238124609242, guid: 182e79728e612c54492afae70888192a, type: 3}
@@ -234,6 +264,7 @@ MonoBehaviour:
   rb2D: {fileID: 1300034320}
   playerInputsReceiver: {fileID: 1300034327}
   interactionChecker: {fileID: 56358642}
+  inventory: {fileID: 0}
   speed: 1
   lastLookingDir: 2
   isWalking: 0
@@ -250,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interact: 0
+  inventory: 0
   moveVector: {x: 0, y: 0}
 --- !u!114 &5534074270070519878
 MonoBehaviour:

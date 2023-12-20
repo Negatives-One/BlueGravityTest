@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor.Animations;
 using UnityEngine;
 
@@ -14,6 +11,7 @@ public class EquipableInfoSO : ScriptableObject
         Hair,
         Cloth
     }
-    [SerializeField] private EquipmentType equipmentType;
+    public EquipmentType equipmentType;
     public AnimatorController controller;
+    public Sprite worldSprite;
 }

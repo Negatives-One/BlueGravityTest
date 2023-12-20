@@ -5,6 +5,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Rigidbody2D rb2D;
     [SerializeField] private PlayerInputsReceiver playerInputsReceiver;
     [SerializeField] private InteractionChecker interactionChecker;
+    [SerializeField] private PlayerInventory inventory;
 
     public enum LookingDirection
     {
@@ -32,8 +33,13 @@ public class CharacterController : MonoBehaviour
 
         if (playerInputsReceiver.interact)
         {
-            interactionChecker.nextToMe.OnInteract();
+            interactionChecker.nextToMe?.OnInteract();
             playerInputsReceiver.interact = false;
+        }
+        if (playerInputsReceiver.inventory)
+        {
+            inventory.Show();
+            playerInputsReceiver.inventory = false;
         }
     }
 

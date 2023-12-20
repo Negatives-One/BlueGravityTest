@@ -176,7 +176,7 @@ TextureImporter:
         height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 14, y: 14, z: 14, w: 14}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -931,7 +931,7 @@ TextureImporter:
         width: 36
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 10, y: 0, z: 6, w: 0}
       outline: []
       physicsShape: []
@@ -991,8 +991,8 @@ TextureImporter:
       GUI_14: 1999902839
       GUI_36: -1861585119
       GUI_23: 227899719
-      GUI_35: 1597652519
       GUI_66: 1404779564
+      GUI_35: 1597652519
       GUI_38: 682067710
       GUI_17: -1051113732
       GUI_46: 1548827155

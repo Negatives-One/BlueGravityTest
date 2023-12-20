@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Yellow Armor
   equipmentType: 2
   controller: {fileID: 9100000, guid: 28417edfefa6d9f4991db722e896d913, type: 2}
+  worldSprite: {fileID: 1858610199, guid: e3920667d7657b948b73c8e58c0f3083, type: 3}

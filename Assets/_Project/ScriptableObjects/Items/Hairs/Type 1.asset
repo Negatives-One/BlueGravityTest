@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Type 1
   equipmentType: 1
-  controller: {fileID: 9100000, guid: 30adfe04b5986d64a98de7740fa592ca, type: 2}
+  controller: {fileID: 9100000, guid: 8f8a92ee4aa370b41a42852cc349b3fc, type: 2}
+  worldSprite: {fileID: 741776781, guid: 25ca7e8a650a252489fe2034fab61953, type: 3}

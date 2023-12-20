@@ -9,7 +9,7 @@ public class ItemDataSO : ScriptableObject
     [SerializeField] private string itemName;
 
     [TextArea] [SerializeField] private string description;
-    [SerializeField] private float price = 10;
+    [SerializeField] private int price = 10;
 
     [SerializeField] private bool canStack;
 
@@ -37,7 +37,7 @@ public class ItemDataSO : ScriptableObject
         set => description = value;
     }
 
-    public float Price
+    public int Price
     {
         get => price;
         set => price = value;
@@ -47,6 +47,10 @@ public class ItemDataSO : ScriptableObject
 [Serializable]
 public class ItemPack
 {
-    public int Amount;
-    public ItemDataSO ItemData;
+    public EquipItemDataSO ItemData;
+
+    public ItemPack(EquipItemDataSO itemData)
+    {
+        ItemData = itemData;
+    }
 }

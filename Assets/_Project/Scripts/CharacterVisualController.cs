@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class CharacterVisualController : MonoBehaviour
 {
@@ -8,12 +9,20 @@ public class CharacterVisualController : MonoBehaviour
 
     [SerializeField] private CharacterController characterController;
     public Animator hatAnimator;
+    public SpriteRenderer hatSpriteRenderer;
+    public Image uiHatSprite;
     public Animator hairAnimator;
+    public SpriteRenderer hairSpriteRenderer;
+    public Image uiHairSprite;
     public Animator clothAnimator;
+    public SpriteRenderer clothSpriteRenderer;
+    public Image uiClothSprite;
     public Animator bodyAnimator;
+
+    [SerializeField] private EquipableInfoSO underpants;
     #endregion References
 
-    [FormerlySerializedAs("_currentVisual")] [SerializeField] private CharacterVisualInfo currentCharacterVisual;
+    [FormerlySerializedAs("_currentVisual")] [SerializeField] private CharacterVisualInfoSO currentCharacterVisual;
     private static readonly int IsWalking = Animator.StringToHash("isWalking");
     private static readonly int IsSide = Animator.StringToHash("isSide");
     private static readonly int IsFront = Animator.StringToHash("isFront");
@@ -53,14 +62,47 @@ public class CharacterVisualController : MonoBehaviour
 
     private void UpdateVisual()
     {
-        hatAnimator.runtimeAnimatorController = currentCharacterVisual.hat.controller;
-        hairAnimator.runtimeAnimatorController = currentCharacterVisual.hair.controller;
-        clothAnimator.runtimeAnimatorController = currentCharacterVisual.cloth.controller;
+        if (currentCharacterVisual.hat == null)
+        {
+            hatSpriteRenderer.enabled = false;
+            uiHatSprite.gameObject.SetActive(false);
+        }
+        else
+        {
+            hatSpriteRenderer.enabled = true;
+            uiHatSprite.gameObject.SetActive(true);
+            uiHatSprite.sprite = currentCharacterVisual.hat.worldSprite;
+            hatAnimator.runtimeAnimatorController = currentCharacterVisual.hat.controller;
+        }
+        
+        if (currentCharacterVisual.hair == null)
+        {
+            hairSpriteRenderer.enabled = false;
+            uiHairSprite.gameObject.SetActive(false);
+        }
+        else
+        {
+            hairSpriteRenderer.enabled = true;
+            uiHairSprite.gameObject.SetActive(true);
+            uiHairSprite.sprite = currentCharacterVisual.hair.worldSprite;
+            hairAnimator.runtimeAnimatorController = currentCharacterVisual.hair.controller;
+        }
+
+        if (currentCharacterVisual.cloth == null)
+        {
+            clothAnimator.runtimeAnimatorController = underpants.controller;
+            uiClothSprite.sprite = underpants.worldSprite;
+        }
+        else
+        {
+            clothAnimator.runtimeAnimatorController = currentCharacterVisual.cloth.controller;
+            uiClothSprite.sprite = currentCharacterVisual.cloth.worldSprite;
+        }
     }
 
-    public void ChangeCurrentVisual(CharacterVisualInfo characterVisualInfo)
+    public void ChangeCurrentVisual(CharacterVisualInfoSO characterVisualInfoSo)
     {
-        currentCharacterVisual = characterVisualInfo;
+        currentCharacterVisual = characterVisualInfoSo;
         UpdateVisual();
     }
 }

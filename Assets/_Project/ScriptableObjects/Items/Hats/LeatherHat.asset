@@ -15,3 +15,4 @@ MonoBehaviour:
   name: Leather Hat
   equipmentType: 0
   controller: {fileID: 9100000, guid: 6b69842a30a83da4ba4c0c5e56dce071, type: 2}
+  worldSprite: {fileID: -530706944, guid: f601afef37174e44baafffe9a33e8ce7, type: 3}
