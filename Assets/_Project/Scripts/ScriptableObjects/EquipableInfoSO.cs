@@ -1,4 +1,3 @@
-using UnityEditor.Animations;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "EquipableInfoSO", menuName = "Blue Gravity/EquipableInfoSO")]
@@ -12,6 +11,6 @@ public class EquipableInfoSO : ScriptableObject
         Cloth
     }
     public EquipmentType equipmentType;
-    public AnimatorController controller;
+    public RuntimeAnimatorController controller;
     public Sprite worldSprite;
 }
